@@ -1,0 +1,227 @@
+EESchema Schematic File Version 2
+LIBS:Pelt_Proj-rescue
+LIBS:pic18fxx20
+LIBS:pic18fxx20-2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:microchip
+LIBS:display-lcd
+LIBS:pic18fxx20-fxx8
+LIBS:jfw-pwm1
+LIBS:mylib
+LIBS:Pelt_Proj-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +12V #PWR?
+U 1 1 5568F466
+P 4800 3700
+F 0 "#PWR?" H 4800 3550 50  0001 C CNN
+F 1 "+12V" H 4800 3840 50  0000 C CNN
+F 2 "" H 4800 3700 60  0000 C CNN
+F 3 "" H 4800 3700 60  0000 C CNN
+	1    4800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5568F46C
+P 5375 4125
+F 0 "#PWR?" H 5375 3875 50  0001 C CNN
+F 1 "GND" H 5375 3975 50  0000 C CNN
+F 2 "" H 5375 4125 60  0000 C CNN
+F 3 "" H 5375 4125 60  0000 C CNN
+	1    5375 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM7805CT U?
+U 1 1 5568F472
+P 5375 3800
+F 0 "U?" H 5175 4000 40  0000 C CNN
+F 1 "LM7805CT" H 5375 4000 40  0000 L CNN
+F 2 "TO-220" H 5375 3900 30  0000 C CIN
+F 3 "" H 5375 3800 60  0000 C CNN
+	1    5375 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR?
+U 1 1 5568F479
+P 5950 3700
+F 0 "#PWR?" H 5950 3550 50  0001 C CNN
+F 1 "VDD" H 5950 3850 50  0000 C CNN
+F 2 "" H 5950 3700 60  0000 C CNN
+F 3 "" H 5950 3700 60  0000 C CNN
+	1    5950 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C?
+U 1 1 5568F47F
+P 4800 3900
+F 0 "C?" H 4825 4000 50  0000 L CNN
+F 1 "250u" H 4825 3800 50  0000 L CNN
+F 2 "" H 4838 3750 30  0000 C CNN
+F 3 "" H 4800 3900 60  0000 C CNN
+	1    4800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 5568F486
+P 4150 3850
+F 0 "P?" H 4150 4000 50  0000 C CNN
+F 1 "CONN_01X02" V 4250 3850 50  0000 C CNN
+F 2 "" H 4150 3850 60  0000 C CNN
+F 3 "" H 4150 3850 60  0000 C CNN
+	1    4150 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5375 4050 5375 4125
+Wire Wire Line
+	5775 3750 5950 3750
+Wire Wire Line
+	5950 3750 5950 3700
+Wire Wire Line
+	4350 3750 4975 3750
+Wire Wire Line
+	4800 3750 4800 3700
+Wire Wire Line
+	4350 4050 5375 4050
+Wire Wire Line
+	4350 3750 4350 3800
+Connection ~ 4800 3750
+Wire Wire Line
+	4350 3900 4350 4050
+Connection ~ 4800 4050
+$Comp
+L +12V #PWR?
+U 1 1 5568F497
+P 4800 2825
+F 0 "#PWR?" H 4800 2675 50  0001 C CNN
+F 1 "+12V" H 4800 2965 50  0000 C CNN
+F 2 "" H 4800 2825 60  0000 C CNN
+F 3 "" H 4800 2825 60  0000 C CNN
+	1    4800 2825
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5568F49D
+P 5375 3250
+F 0 "#PWR?" H 5375 3000 50  0001 C CNN
+F 1 "GND" H 5375 3100 50  0000 C CNN
+F 2 "" H 5375 3250 60  0000 C CNN
+F 3 "" H 5375 3250 60  0000 C CNN
+	1    5375 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C?
+U 1 1 5568F4A3
+P 4800 3025
+F 0 "C?" H 4825 3125 50  0000 L CNN
+F 1 "250u" H 4825 2925 50  0000 L CNN
+F 2 "" H 4838 2875 30  0000 C CNN
+F 3 "" H 4800 3025 60  0000 C CNN
+	1    4800 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 5568F4AA
+P 4150 2975
+F 0 "P?" H 4150 3125 50  0000 C CNN
+F 1 "CONN_01X02" V 4250 2975 50  0000 C CNN
+F 2 "" H 4150 2975 60  0000 C CNN
+F 3 "" H 4150 2975 60  0000 C CNN
+	1    4150 2975
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5375 3175 5375 3250
+Wire Wire Line
+	5775 2875 5950 2875
+Wire Wire Line
+	5950 2875 5950 2825
+Wire Wire Line
+	4350 2875 4975 2875
+Wire Wire Line
+	4800 2875 4800 2825
+Wire Wire Line
+	4350 3175 5375 3175
+Wire Wire Line
+	4350 2875 4350 2925
+Connection ~ 4800 2875
+Wire Wire Line
+	4350 3025 4350 3175
+Connection ~ 4800 3175
+$Comp
+L LM7810CT U?
+U 1 1 5568F4BB
+P 5375 2925
+F 0 "U?" H 5175 3125 40  0000 C CNN
+F 1 "LM7810CT" H 5375 3125 40  0000 L CNN
+F 2 "TO-220" H 5375 3025 30  0000 C CIN
+F 3 "" H 5375 2925 60  0000 C CNN
+	1    5375 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L +10 #PWR?
+U 1 1 5568F4C2
+P 5950 2825
+F 0 "#PWR?" H 5950 2675 50  0001 C CNN
+F 1 "+10" H 5950 2975 50  0000 C CNN
+F 2 "" H 5950 2825 60  0000 C CNN
+F 3 "" H 5950 2825 60  0000 C CNN
+	1    5950 2825
+	1    0    0    -1  
+$EndComp
+Text HLabel 5950 2875 2    60   Input ~ 0
+10V
+Text HLabel 5375 3175 2    60   Input ~ 0
+GND
+Text HLabel 5950 3750 2    60   Input ~ 0
+VDD
+$EndSCHEMATC
