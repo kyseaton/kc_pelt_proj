@@ -1,4 +1,4 @@
-update=Thu 09 Jul 2015 01:59:53 PM EDT
+update=Tue 14 Jul 2015 12:31:31 PM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -40,7 +40,7 @@ LabSize=60
 version=1
 [eeschema]
 version=1
-LibDir=../../internet_libs
+LibDir=/home/kyle/Desktop/kicad/internet_libs
 [eeschema/libraries]
 LibName1=Pelt_Proj-rescue
 LibName2=pic18fxx20
