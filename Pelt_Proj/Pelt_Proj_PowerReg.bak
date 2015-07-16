@@ -35,10 +35,12 @@ LIBS:display-lcd
 LIBS:pic18fxx20-fxx8
 LIBS:jfw-pwm1
 LIBS:mylib
+LIBS:maxim-10
+LIBS:keypad4x4_ece
 LIBS:Pelt_Proj-cache
 EELAYER 25 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
 Sheet 2 4
 Title ""
@@ -105,17 +107,6 @@ F 3 "" H 4800 3900 60  0000 C CNN
 	1    4800 3900
 	1    0    0    -1  
 $EndComp
-$Comp
-L CONN_01X02 P?
-U 1 1 5568F486
-P 4150 3850
-F 0 "P?" H 4150 4000 50  0000 C CNN
-F 1 "CONN_01X02" V 4250 3850 50  0000 C CNN
-F 2 "" H 4150 3850 60  0000 C CNN
-F 3 "" H 4150 3850 60  0000 C CNN
-	1    4150 3850
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	5375 4050 5375 4125
 Wire Wire Line
@@ -123,17 +114,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 3750 5950 3700
 Wire Wire Line
-	4350 3750 4975 3750
-Wire Wire Line
 	4800 3750 4800 3700
-Wire Wire Line
-	4350 4050 5375 4050
-Wire Wire Line
-	4350 3750 4350 3800
-Connection ~ 4800 3750
-Wire Wire Line
-	4350 3900 4350 4050
-Connection ~ 4800 4050
 $Comp
 L +12V #PWR?
 U 1 1 5568F497
@@ -224,4 +205,12 @@ Text HLabel 5375 3175 2    60   Input ~ 0
 GND
 Text HLabel 5950 3750 2    60   Input ~ 0
 VDD
+Text GLabel 4475 2875 1    60   Input ~ 12
+12V
+Wire Wire Line
+	4825 4050 5375 4050
+Wire Wire Line
+	4975 3750 4800 3750
+Text Notes 2875 3025 0    60   Italic 12
+Main Power Connector
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Tue 14 Jul 2015 12:31:31 PM EDT
+update=Thu 16 Jul 2015 09:11:38 AM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -32,12 +34,7 @@ SubpartFirstId=65
 NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
-RptD_X=0
-RptD_Y=100
-RptLab=1
 LabSize=60
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=/home/kyle/Desktop/kicad/internet_libs
@@ -79,3 +76,5 @@ LibName34=pic18fxx20-fxx8
 LibName35=jfw-pwm1
 LibName36=/home/kyle/Desktop/kicad/mylibs/tute1/mylib
 LibName37=/home/kyle/Desktop/kicad/internet_libs/jfw-pwm1
+LibName38=maxim-10
+LibName39=keypad4x4_ece

@@ -35,6 +35,8 @@ LIBS:display-lcd
 LIBS:pic18fxx20-fxx8
 LIBS:jfw-pwm1
 LIBS:mylib
+LIBS:maxim-10
+LIBS:keypad4x4_ece
 LIBS:Pelt_Proj-cache
 EELAYER 25 0
 EELAYER END
