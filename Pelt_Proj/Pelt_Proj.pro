@@ -1,4 +1,4 @@
-update=Thu 16 Jul 2015 09:11:38 AM EDT
+update=Fri 17 Jul 2015 01:45:32 PM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=/home/kyle/Desktop/kicad/internet_libs
@@ -78,3 +68,13 @@ LibName36=/home/kyle/Desktop/kicad/mylibs/tute1/mylib
 LibName37=/home/kyle/Desktop/kicad/internet_libs/jfw-pwm1
 LibName38=maxim-10
 LibName39=keypad4x4_ece
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

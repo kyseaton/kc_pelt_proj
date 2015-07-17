@@ -1,0 +1,256 @@
+EESchema Schematic File Version 2
+LIBS:Pelt_Proj-rescue
+LIBS:pic18fxx20
+LIBS:pic18fxx20-2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:microchip
+LIBS:display-lcd
+LIBS:pic18fxx20-fxx8
+LIBS:jfw-pwm1
+LIBS:mylib
+LIBS:maxim-10
+LIBS:keypad4x4_ece
+LIBS:Pelt_Proj-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 5 4
+Title "Micro SD Card Portion"
+Date "2015-07-17"
+Rev "1.0"
+Comp "JFM"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4050 U16
+U 3 1 55AAF9FC
+P 6350 4700
+F 0 "U16" H 6300 4700 60  0000 C CNN
+F 1 "4050" H 6540 4575 60  0000 C CNN
+F 2 "" H 6350 4700 60  0000 C CNN
+F 3 "" H 6350 4700 60  0000 C CNN
+	3    6350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4050 U16
+U 1 1 55AAFA51
+P 4650 4500
+F 0 "U16" H 4600 4500 60  0000 C CNN
+F 1 "4050" H 4840 4375 60  0000 C CNN
+F 2 "" H 4650 4500 60  0000 C CNN
+F 3 "" H 4650 4500 60  0000 C CNN
+	1    4650 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4050 U16
+U 2 1 55AAFAB8
+P 4800 4925
+F 0 "U16" H 4775 4925 60  0000 C CNN
+F 1 "4050" H 4990 4800 60  0000 C CNN
+F 2 "" H 4800 4925 60  0000 C CNN
+F 3 "" H 4800 4925 60  0000 C CNN
+	2    4800 4925
+	1    0    0    -1  
+$EndComp
+$Comp
+L VSS #PWR65
+U 1 1 55AAFCBF
+P 5925 3450
+F 0 "#PWR65" H 5925 3300 50  0001 C CNN
+F 1 "VSS" H 5925 3600 50  0000 C CNN
+F 2 "" H 5925 3450 60  0000 C CNN
+F 3 "" H 5925 3450 60  0000 C CNN
+	1    5925 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM2931Z-3.3/5.0 U17
+U 1 1 55AAFCDB
+P 7175 3325
+F 0 "U17" H 7175 3575 40  0000 C CNN
+F 1 "LM2931Z-3.3/5.0" H 7175 3525 40  0000 C CNN
+F 2 "TO92-123" H 7175 3425 35  0000 C CIN
+F 3 "" H 7175 3325 60  0000 C CNN
+	1    7175 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR66
+U 1 1 55AB0549
+P 6600 3200
+F 0 "#PWR66" H 6600 3050 50  0001 C CNN
+F 1 "+5V" H 6600 3340 50  0000 C CNN
+F 2 "" H 6600 3200 60  0000 C CNN
+F 3 "" H 6600 3200 60  0000 C CNN
+	1    6600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR68
+U 1 1 55AB0567
+P 7175 3725
+F 0 "#PWR68" H 7175 3475 50  0001 C CNN
+F 1 "GND" H 7175 3575 50  0000 C CNN
+F 2 "" H 7175 3725 60  0000 C CNN
+F 3 "" H 7175 3725 60  0000 C CNN
+	1    7175 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7175 3575 7175 3725
+Wire Wire Line
+	5925 3450 5925 3575
+Wire Wire Line
+	5925 3575 7625 3575
+Wire Wire Line
+	6600 3200 6600 3275
+Wire Wire Line
+	6600 3275 6775 3275
+Wire Wire Line
+	7875 3275 7575 3275
+Wire Wire Line
+	7875 3175 7875 3275
+Text HLabel 5300 4400 0    60   Input ~ 12
+MISO
+Text HLabel 5300 4700 0    60   Input ~ 12
+MOSI
+Text HLabel 3900 4500 0    60   Input ~ 12
+SCLK
+Text HLabel 3875 4925 0    60   Input ~ 12
+MicroSD_CS
+Text HLabel 6600 3275 0    60   Input ~ 12
+5V
+$Comp
+L microsd U18
+U 1 1 55AB1DC3
+P 7800 4975
+F 0 "U18" H 7900 4900 60  0000 C CNN
+F 1 "microsd" H 8150 5350 60  0000 C CNN
+F 2 "" H 7800 4975 60  0000 C CNN
+F 3 "" H 7800 4975 60  0000 C CNN
+	1    7800 4975
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 4400 7000 4400
+Wire Wire Line
+	6800 4700 7000 4700
+Wire Wire Line
+	5900 4700 5300 4700
+Wire Wire Line
+	3900 4500 4200 4500
+Wire Wire Line
+	5250 4925 6950 4925
+Wire Wire Line
+	6950 4925 6950 4775
+Wire Wire Line
+	6950 4775 7000 4775
+Wire Wire Line
+	3900 4925 4350 4925
+$Comp
+L VDD #PWR69
+U 1 1 55AB28A2
+P 7875 3175
+F 0 "#PWR69" H 7875 3025 50  0001 C CNN
+F 1 "VDD" H 7875 3325 50  0000 C CNN
+F 2 "" H 7875 3175 60  0000 C CNN
+F 3 "" H 7875 3175 60  0000 C CNN
+	1    7875 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR67
+U 1 1 55AB28C0
+P 6900 4250
+F 0 "#PWR67" H 6900 4100 50  0001 C CNN
+F 1 "VDD" H 6900 4400 50  0000 C CNN
+F 2 "" H 6900 4250 60  0000 C CNN
+F 3 "" H 6900 4250 60  0000 C CNN
+	1    6900 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4475 6950 4475
+Wire Wire Line
+	6950 4475 6950 3575
+Connection ~ 6950 3575
+Wire Wire Line
+	6900 4250 6900 4625
+Wire Wire Line
+	6900 4625 7000 4625
+Text GLabel 7175 3675 2    60   Input ~ 12
+GND
+Wire Wire Line
+	5100 4500 6975 4500
+Wire Wire Line
+	6975 4500 6975 4550
+Wire Wire Line
+	6975 4550 7000 4550
+$Comp
+L C_Small C18
+U 1 1 55AB2EED
+P 6675 3425
+F 0 "C18" H 6685 3495 50  0000 L CNN
+F 1 "0.1u" H 6685 3345 50  0000 L CNN
+F 2 "" H 6675 3425 60  0000 C CNN
+F 3 "" H 6675 3425 60  0000 C CNN
+	1    6675 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6675 3325 6675 3275
+Connection ~ 6675 3275
+Wire Wire Line
+	6675 3525 6675 3575
+Connection ~ 6675 3575
+$Comp
+L C_Small C19
+U 1 1 55AB2F90
+P 7625 3425
+F 0 "C19" H 7635 3495 50  0000 L CNN
+F 1 "0.1u" H 7635 3345 50  0000 L CNN
+F 2 "" H 7625 3425 60  0000 C CNN
+F 3 "" H 7625 3425 60  0000 C CNN
+	1    7625 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7625 3325 7625 3275
+Connection ~ 7625 3275
+Wire Wire Line
+	7625 3575 7625 3525
+Connection ~ 7175 3575
+$EndSCHEMATC
